@@ -1,0 +1,247 @@
+html {
+  font-size: 16px;
+}
+.navbar {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 2px 8px 2px gray;
+}
+.navlinks {
+  width: 87%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navlinks > span {
+  width: 50%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.main-logo {
+  text-decoration: none;
+  font-size: 1.5rem;
+  height: 100%;
+  font-weight: bold;
+}
+.main-logo > span {
+  display: block;
+}
+.main-logo > span:nth-child(1) {
+  font-size: 0.75rem;
+}
+.icon {
+  color: #944cc4;
+  height: 2.25rem;
+  width: 2.25rem;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+.icon > * {
+  margin: auto;
+  height: 2.25rem;
+  width: 2.25rem;
+}
+.icon:hover {
+  transform: scale(1.01);
+}
+
+.category {
+  margin-left: 1.8rem;
+}
+.dropdown-btn {
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 6px 24px;
+  background-color: #944cc4;
+  color: #ffff;
+  border-radius: 8px;
+  cursor: default;
+}
+.dropdown {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  text-decoration: none;
+  list-style: none;
+  transform: scaleY(0);
+  transition: transform 0.25s linear;
+  transform-origin: top;
+  box-shadow: 0 10px 8px 2px gray;
+  background-color: #ffff;
+  z-index: 5;
+}
+.dropdown > li {
+  font-size: 0.9rem;
+  width: 8rem;
+  margin: 0.75rem;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid gray;
+  border-radius: 4rem;
+  padding: 0.5rem;
+}
+.dropdown > li:hover,
+.dropdown > li:focus-within {
+  background-color: #944cc4;
+}
+.dropdown-btn:hover + .navbar {
+  box-shadow: none;
+}
+.dropdown:hover + .navbar {
+  box-shadow: none;
+}
+.dropdown-btn:hover + .dropdown {
+  transform: scaleY(1);
+}
+.dropdown:hover {
+  transform: scaleY(1);
+}
+.searchbar {
+  flex: 1;
+  padding: 0 0.5rem;
+}
+
+.searchbar-box {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 36px;
+}
+#search {
+  width: 100%;
+  border-radius: 36px;
+  outline: none;
+  box-shadow: none;
+  padding: 0.5rem;
+  border: none;
+  border: 1px solid black;
+}
+.search-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #ffff;
+  padding: 0.5rem 1rem;
+  border: 0;
+  background-color: #944cc4;
+  outline: none;
+  cursor: pointer;
+}
+.login-btn {
+  background-color: #944cc4;
+  color: #ffff;
+  border: 0;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  padding: 0.4rem 1.75rem;
+  margin-left: auto;
+  cursor: pointer;
+}
+.more-options {
+  width: fit-content;
+  height: fit-content;
+}
+
+.profile-dropdown {
+  position: absolute;
+  display: none;
+  right: 0;
+  top: 100%;
+  border-top: 1px solid #944cc4;
+  width: auto;
+  height: fit-content;
+  background-color: #ffff;
+  box-shadow: 0 5px 5px 1px gray;
+  list-style: none;
+  padding: 1rem 0;
+}
+.profile-dropdown > li {
+  padding: 0.5rem 1.25rem;
+}
+.profile-dropdown > li > a {
+  display: flex;
+  align-items: center;
+}
+.profile-dropdown > li > a > svg {
+  margin-right: 0.35rem;
+}
+.profile-dropdown li:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-name {
+  font-size: 1.1rem;
+}
+.profile-view {
+  font-size: 0.9rem;
+}
+.profile-thumbnail {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  margin: 0 0.5rem 0 0;
+}
+#profile-dropdown-toggle {
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  outline: none;
+  border: none;
+}
+.more-options:focus-within > .profile-dropdown {
+  display: initial;
+}
+@media screen and (max-width: 720px) {
+  .navbar {
+    box-shadow: none;
+  }
+  .navlinks {
+    width: 90%;
+  }
+  .searchbar-toggle {
+    display: block;
+  }
+  .searchbar {
+    padding: 1rem 1.2rem;
+    box-shadow: 0 10px 8px 1px gray;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .navlinks > span {
+    width: auto;
+  }
+  .dropdown-btn {
+    padding: 0.5rem;
+  }
+  .login-btn {
+    padding: 0.5rem 0.7rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 12px;
+  }
+}
