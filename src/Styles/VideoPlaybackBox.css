@@ -1,0 +1,88 @@
+.VideoPlaybackBox {
+  min-width: 250px;
+  margin: 0 auto;
+}
+
+.video-container {
+  width: 100%;
+  background-color: #555;
+  min-height: 20vh;
+}
+
+.current-video {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  background-color: #555;
+}
+.video-title {
+  font-size: 1.5rem;
+  opacity: 0.8;
+  padding: 1rem 0.2rem;
+}
+.channel-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  margin: 1rem auto;
+}
+.channel-info-wraper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.circle-image-thumbnail {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 3rem;
+  border: 1px solid #000;
+  background-color: #555;
+}
+
+.functional-btns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.functional-btns button {
+  height: 2.5rem;
+  border: none;
+  margin-left: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 0px;
+}
+/* .controls {
+  width: 100%;
+  height: 8.0971659919028340080971659919028%;
+  position: relative;
+} */
+/* .controls > * {
+  float: left;
+  width: 3.90625%;
+  height: 100%;
+  margin-left: 0.1953125%;
+  display: block;
+} */
+
+@media screen and (max-width: 720px) {
+  .functional-btns button {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+  .channel-info-wraper {
+    gap: 0.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .functional-btns button {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.8rem;
+  }
+}

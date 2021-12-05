@@ -4,7 +4,104 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-
+:root {
+  --primary-color: #944cc4;
+}
+html {
+  font-size: 16px;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
 a {
   text-decoration: none;
+  color: var(--primary-color);
+}
+
+button {
+  cursor: pointer;
+}
+.NoMatch {
+  display: flex;
+  height: 92vh;
+  background-color: #ece6db;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.biggestHeading {
+  font-size: 10rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+.bigHeading {
+  font-size: 6rem;
+  color: gray;
+  text-align: center;
+}
+
+.btn {
+  padding: 1rem 1.3rem;
+  font-weight: bold;
+  border: 0;
+  border-radius: 5rem;
+  margin: 0.2rem;
+  flex-shrink: 0;
+  outline: none;
+}
+
+.bgColor {
+  background-color: var(--primary-color);
+  color: white;
+}
+.btn-link {
+  display: block;
+  max-width: fit-content;
+  margin: 1rem auto 0 auto;
+}
+
+.input-style {
+  width: 95%;
+  min-width: 200px;
+  display: block;
+  padding: 0.7rem 1rem;
+  margin-top: 0.3rem;
+  border: 1px solid #505050;
+  border-radius: 0.5rem;
+  outline: none;
+}
+.circle-profile-image {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 15rem;
+  background-color: #555;
+}
+
+.PopupMsj {
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 720px) {
+  .pageContent {
+    margin-top: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 12px;
+  }
 }

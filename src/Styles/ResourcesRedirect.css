@@ -1,0 +1,28 @@
+.ResourcesRedirect {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: min(400px, 98%);
+  height: fit-content;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.8rem auto;
+  background-color: #fff;
+  box-shadow: 0 4px 5px 1px gray;
+}
+
+.ResourcesRedirect > span > h3 {
+  font-size: min(24px, 1.3rem);
+  margin-bottom: 0.5rem;
+}
+.ResourcesRedirect > span > p {
+  font-size: 1rem;
+}
+.redirect-to-more {
+  font-size: 0.9rem;
+  color: black;
+}
+.redirect-to-more::after {
+  font-size: 1rem;
+  content: " >";
+}

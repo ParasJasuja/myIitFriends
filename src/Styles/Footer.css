@@ -1,0 +1,74 @@
+.Footer {
+  padding: 2rem 5rem;
+  background-color: var(--primary-color);
+  width: 100%;
+  position: relative;
+  top: 100%;
+  color: #fff;
+}
+.footer-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+.footer-head span {
+  padding: 0 1rem 0.5rem 0;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact-info > ul {
+  list-style: none;
+  margin-right: 1rem;
+}
+.contact-info li {
+  padding: 0.8rem 0;
+  font-size: 1.3rem;
+}
+.contact-info input {
+  border: 1px solid #fff;
+  outline: none;
+  padding: 0.2rem 2rem 0.2rem 0.4rem;
+  color: black;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+}
+.contact-info input::placeholder {
+  color: #505;
+}
+.contact-info input:focus {
+  border: 2px solid #fff;
+}
+.contact-info button {
+  font-size: 1rem;
+  padding: 0.2rem 0.8rem;
+  background-color: var(--primary-color);
+  color: #000;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #fff;
+  margin: 0 0.3rem;
+}
+.contact-info button:focus {
+  border: 2px solid #fff;
+  background-color: #555;
+}
+
+.social-icon {
+  margin: 0 1rem;
+}
+.social-icon:first-child {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .Footer {
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,64 @@
+.EditProfileForm {
+  width: 100%;
+  max-width: 750px;
+  background-color: #fff;
+
+  padding: 1.5rem;
+  margin: 2rem 1rem;
+  border: 1px solid black;
+
+  border-radius: 1.5rem;
+  transform-origin: top center;
+  animation: grow-full 0.2s ease-in-out;
+}
+
+.form-labels {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.person-more-details,
+.person-name,
+.form-action-buttons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.person-more-details .form-labels,
+.person-name .form-labels,
+.form-action-buttons .form-labels {
+  padding: 0.3rem 0;
+}
+.person-more-details {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.form-action-buttons button {
+  margin: 0 1rem;
+}
+.profile-imge-change {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: calc(15rem + 50px);
+}
+.change-image {
+  display: none;
+}
+
+@keyframes grow-full {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}

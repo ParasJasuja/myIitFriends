@@ -1,0 +1,108 @@
+.AddVideo {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.one-card-container {
+  max-width: 500px;
+  float: inline-end;
+}
+.addVideoForm {
+  width: fit-content;
+  padding: 2rem;
+}
+
+.filesUpload {
+  width: fit-content;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.addVideoForm > label {
+  display: block;
+
+  margin: 1rem 0 0.3rem 0;
+  font-weight: bold;
+}
+.addFile {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 250px;
+  min-height: 150px;
+  max-width: min(500px, 90%);
+  max-height: 300px;
+  margin-bottom: 0.3rem;
+  font-size: 2rem;
+  border: 2px solid #505050;
+  border-radius: 1.5rem;
+  content: "+";
+  overflow: hidden;
+}
+
+.filesUpload > span {
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.thumbnail {
+  min-width: 250px;
+  min-height: 150px;
+  max-width: min(500px, 90%);
+  max-height: 300px;
+  background-color: rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.videoDiscription,
+.videoTitle {
+  display: block;
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1px solid #505050;
+  border-radius: 0.5rem;
+  outline: none;
+}
+#addThumbnail::after {
+  display: block;
+  content: "Thumbnail";
+}
+#addVideo::after {
+  content: "Video";
+}
+
+.videoDiscription:focus,
+.videoTitle:focus {
+  border: 2px solid black;
+}
+
+#addVideo,
+#addThumbnail {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .filesUpload {
+    width: 100%;
+  }
+  .videoDiscription,
+  .videoTitle {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .filesUpload {
+    width: 100%;
+  }
+  .addVideoForm {
+    padding: 1rem 2rem;
+  }
+  /* .videoDiscription,
+  .videoTitle {
+    width: 90%;
+  } */
+}

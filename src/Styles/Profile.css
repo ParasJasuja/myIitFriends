@@ -1,0 +1,126 @@
+.Profile {
+  overflow: hidden;
+}
+.cover-photo-container {
+  position: relative;
+  height: 360px;
+  background-color: #555;
+  z-index: 1;
+}
+.cover-photo {
+  z-index: inherit;
+}
+
+.profile-content,
+.edit-profile {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+.profile-content {
+  transform-origin: bottom;
+  animation: growToTop 0.15s linear;
+}
+.person-discription,
+.profile-more-content,
+.profile-more-discription {
+  height: fit-content;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+  z-index: inherit;
+}
+.person-discription {
+  position: relative;
+  max-width: 500px;
+  margin-top: -8rem;
+}
+.profile-more-discription {
+  max-width: 500px;
+  padding: 2rem;
+}
+.profile-more-content {
+  padding-top: 2rem;
+}
+
+.more-discription-container {
+  min-width: 250px;
+  width: 100%;
+
+  padding: 2rem;
+  border: 1px solid #000;
+  box-shadow: 0 5px 10px 1px #555;
+  border-radius: 1rem;
+}
+.more-discription-container > h1 {
+  font-size: 1.4rem;
+  padding-top: 0.5rem;
+}
+.more-discription-container > p {
+  padding: 0.2rem;
+}
+
+.profile-count-info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-width: 250px;
+  width: 100%;
+  max-width: 720px;
+  padding: 1.5rem 3rem;
+  margin-bottom: 2rem;
+  border: 1px solid #000;
+  box-shadow: 0 10px 10px 1px #555;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+.profile-count-info span {
+  padding: 0.5rem;
+}
+.profile-count-info h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 0.3rem;
+  color: var(--primary-color);
+}
+.profile-btn {
+  position: absolute;
+  width: fit-content;
+  bottom: 85%;
+  left: 105%;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  border: 1px solid #000;
+}
+
+@keyframes growToTop {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .profile-btn {
+    left: 33.3%;
+    bottom: 105%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .Profile {
+    padding-top: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+}
+
+@media screen and (max-width: 320px) {
+}

@@ -1,0 +1,81 @@
+.LoginBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  height: 70vh;
+  width: 70vw;
+  border: 1px solid black;
+  border-radius: 32px;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  padding: 4rem 6rem;
+}
+.loginCats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap-reverse;
+}
+.loginCats > div {
+  display: flex;
+  justify-content: space-around;
+}
+.loginCats > div:last-child {
+  margin-left: auto;
+}
+.loginCat {
+  border: none;
+  background-color: white;
+  outline: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.3rem;
+}
+.loginCat:last-child {
+  border-left: 1px solid black;
+}
+.loginForm > label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #505050;
+  margin: 1rem 0 0 0;
+}
+
+.loginForm > input {
+  width: 60%;
+  padding: 0.7rem 1rem;
+  border: 1px solid #505050;
+  border-radius: 0.5rem;
+  outline: none;
+}
+.loginForm > input:focus {
+  border: 2px solid black;
+}
+
+.loginButton {
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  margin: 1rem 0 0 0;
+}
+
+@media screen and (max-width: 800px) {
+  .LoginBox {
+    padding: 4rem;
+  }
+  .loginForm > input {
+    width: 90%;
+  }
+  .loginCats > div:last-child {
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .LoginBox {
+    width: 95vw;
+    padding: 3rem;
+  }
+}

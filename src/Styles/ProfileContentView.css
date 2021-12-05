@@ -1,0 +1,14 @@
+.ProfileContentView {
+  padding: 1rem 0 0 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .ProfileContentView {
+    padding-left: 1rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .ProfileContentView {
+    padding-left: 0.5rem;
+  }
+}
